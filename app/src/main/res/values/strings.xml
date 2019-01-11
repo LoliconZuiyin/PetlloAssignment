@@ -1,0 +1,79 @@
+<resources>
+    <!-- Login & Register -->
+    <string name="app_name">Petllo</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login here.</string>
+    <string name="logo">Petllo Logo</string>
+
+    <!-- Bottom Navigation View -->
+    <string name="home">Home</string>
+    <string name="adopt">Adopt</string>
+    <string name="training">Training</string>
+    <string name="profile">Profile</string>
+
+    <!-- Home Screen -->
+    <string name="welcome">Welcome to Petllo!</string>
+    <string name="logout">Logout</string>
+
+    <!-- Profile -->
+    <string name="action_settings">Settings</string>
+    <string name="zuiyin">Zuiyin</string>
+    <string name="steven">Steven</string>
+    <string name="contact_no">Contact No:</string>
+    <string name="my_pets">My Pets</string>
+    <string name="age">Age :</string>
+    <string name="leon">Leon</string>
+    <string name="abc123">abc123</string>
+    <string name="gender">Gender :</string>
+    <string-array name="dog_age_year">
+        <item> 1 year below </item>
+        <item> 1 year</item>
+        <item> 2 years</item>
+        <item> 3 years</item>
+        <item> 4 years</item>
+        <item> 5 years</item>
+        <item> 6 years</item>
+        <item> 7 years</item>
+        <item> 8 years</item>
+        <item> 9 years</item>
+        <item> 10 years</item>
+        <item> 11 years</item>
+        <item> 12 years</item>
+        <item> 13 years</item>
+        <item> 14 years</item>
+        <item> 15 years</item>
+        <item> 16 years</item>
+        <item> 17 years</item>
+        <item> 19 years</item>
+        <item> 20 years</item>
+        <item> 20 years above</item>
+    </string-array>
+
+    <!-- Training -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="private_training">Private Training</string>
+    <string name="next">Next</string>
+    <string name="group_training">Group Training</string>
+    <string name="dog_walking">Dog Walking</string>
+    <string name="dog1">dog1</string>
+    <string name="can_t_get_your_dog_listen_to_you_customized_in_house_dog_training_is_made_for_you">Can\'t get your dog listen to you - customized in-house dog training is made for you</string>
+    <string name="customized_in_house_dog_training_is_made_for_you">customized_in_house_dog_training_is_made_for_you</string>
+    <string name="can_t_get_your_dog_listen_to_you">can_t_get_your_dog_listen_to_you</string>
+    <string name="Customized_in_house_dog_training_is_made_for_you">Customized in house dog training is made for you</string>
+    <string name="Can_t_get_your_dog_listen_to_you">Can\'t get your dog listen to you</string>
+    <string name="an_alternative_training_without_breaking_the_bank">An alternative training without breaking the bank</string>
+    <string name="An_alternative_training_without_breaking_the_bank">An alternative training without breaking the bank</string>
+    <string name="No_time_to_walk_your_dog">No time to walk your dog</string>
+    <string name="Convenient_dog_walking_services_at_your_doorstep">Convenient dog walking services at your doorstep</string>
+    <string name="private_dog_training">Private Dog Training</string>
+    <string name="group_dog_training">Group Dog Training</string>
+    <string name="ptwallpaper">ptWallpaper</string>
+    <string name="gtwallpaper">gtWallpaper</string>
+    <string name="dwwallpaper">dwWallpaper</string>
+</resources>
