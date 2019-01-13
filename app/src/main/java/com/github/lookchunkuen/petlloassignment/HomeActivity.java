@@ -52,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case R.id.action_profile:
                         //Toast.makeText(HomeActivity.this, "Action Profile Clicked", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(getApplicationContext(), userProfile.class);
+                        intent = new Intent(getApplicationContext(), UserProfileActivity.class);
                         startActivity(intent);
                         break;
                 }

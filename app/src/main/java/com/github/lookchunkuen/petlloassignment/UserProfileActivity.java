@@ -27,6 +27,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.jgabrielfreitas.core.BlurImageView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,7 +37,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class userProfile extends AppCompatActivity {
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class UserProfileActivity extends AppCompatActivity {
     // Create Custom adapter
     ListView lst;
     String[] dogName={"Dog1","Dog2","Dog3"};
@@ -59,17 +62,23 @@ public class userProfile extends AppCompatActivity {
 
     private Button btn_photo_upload;
     private Bitmap bitmap;
-    ImageView ProfileImage;
+    CircleImageView ProfileImage;
+    BlurImageView myBlurImage;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile2);
+        setContentView(R.layout.activity_user_profile);
 
         // Set up title name and enable back button
         getSupportActionBar().setTitle("My Profile");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        // Set blur for blur image
+        myBlurImage = findViewById(R.id.BlurbgImage);
+        myBlurImage.setBlur(2);
 
         // For pet list
         //lst = findViewById(R.id.PetList);
@@ -109,7 +118,7 @@ public class userProfile extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.action_adoption:
-                        Toast.makeText(userProfile.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(UserProfileActivity.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_training:
                         //Toast.makeText(HomeActivity.this, "Action Training Clicked", Toast.LENGTH_SHORT).show();
@@ -118,7 +127,7 @@ public class userProfile extends AppCompatActivity {
                         break;
                     case R.id.action_profile:
                         //Toast.makeText(HomeActivity.this, "Action Profile Clicked", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(getApplicationContext(), userProfile.class);
+                        intent = new Intent(getApplicationContext(), UserProfileActivity.class);
                         startActivity(intent);
                         break;
                 }
@@ -182,16 +191,17 @@ public class userProfile extends AppCompatActivity {
                         int success = jsonObject.getInt("success");
                         String message = jsonObject.getString("message");
                         if (success==1) {
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                             progressDialog.dismiss();
+
                         }else{
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                             progressDialog.dismiss();
                         }
                     } catch (JSONException e) {
                         progressDialog.dismiss();
                         e.printStackTrace();
-                        Toast.makeText(userProfile.this, "Error" + response, Toast.LENGTH_LONG).show();
+                        Toast.makeText(UserProfileActivity.this, "Error" + response, Toast.LENGTH_LONG).show();
                     }
                 }
             },
@@ -286,15 +296,15 @@ public class userProfile extends AppCompatActivity {
 
                         if (success==1) {
                             progressDialog.dismiss();
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                         }else{
                             progressDialog.dismiss();
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                         }
                     } catch (JSONException e) {
                         progressDialog.dismiss();
                         e.printStackTrace();
-                        Toast.makeText(userProfile.this, "Error" + response, Toast.LENGTH_LONG).show();
+                        Toast.makeText(UserProfileActivity.this, "Error" + response, Toast.LENGTH_LONG).show();
                     }
                 }
             },
@@ -364,16 +374,16 @@ public class userProfile extends AppCompatActivity {
                         int success = jsonObject.getInt("success");
                         String message = jsonObject.getString("message");
                         if (success==1) {
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                             progressDialog.dismiss();
                         }else{
                             progressDialog.dismiss();
-                            Toast.makeText(userProfile.this, message, Toast.LENGTH_LONG).show();
+                            Toast.makeText(UserProfileActivity.this, message, Toast.LENGTH_LONG).show();
                         }
                     } catch (JSONException e) {
                         progressDialog.dismiss();
                         e.printStackTrace();
-                        Toast.makeText(userProfile.this, "Error" + response, Toast.LENGTH_LONG).show();
+                        Toast.makeText(UserProfileActivity.this, "Error" + response, Toast.LENGTH_LONG).show();
                     }
                 }
             },
