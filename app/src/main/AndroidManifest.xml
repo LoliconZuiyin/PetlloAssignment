@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".userProfile"></activity>
+        <activity android:name=".userProfile"
+            android:parentActivityName=".HomeActivity"></activity>
         <activity android:name=".DogTraining"></activity>
     </application>
 
