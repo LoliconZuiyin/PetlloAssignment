@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink_background"
     tools:context=".UserProfileActivity">
 
     <com.jgabrielfreitas.core.BlurImageView
         android:id="@+id/BlurbgImage"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="0dp"
@@ -24,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:elevation="0dp"
-        app:itemBackground="@color/colorPrimary"
+        app:itemBackground="@color/colorAccent"
         app:itemIconTint="@drawable/bnv_tab_item_active"
         app:itemTextColor="@drawable/bnv_tab_item_active"
         app:labelVisibilityMode="labeled"
@@ -59,15 +58,15 @@
     <TextView
         android:id="@+id/UserProfileDogNameLabel"
 
-        android:layout_width="131dp"
+        android:layout_width="99dp"
         android:layout_height="35dp"
         android:layout_above="@+id/UserProfileDogIDLabel"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
-        android:layout_marginBottom="4dp"
-        android:text="My Pet Name :"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginBottom="28dp"
+        android:text="Pet Name :"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,9 +84,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginBottom="134dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginBottom="158dp"
         android:text="Pet ID :"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -108,12 +107,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="191dp"
-        android:layout_marginLeft="191dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginLeft="194dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginRight="161dp"
-        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:layout_marginBottom="113dp"
         android:background="@drawable/ic_pets_black_24dp"
         android:onClick="Register"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,11 +129,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginLeft="-5dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginRight="45dp"
-        android:layout_marginBottom="183dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="235dp"
         android:layout_toEndOf="@+id/UserProfilePetName"
         android:layout_toRightOf="@+id/UserProfilePetName"
         android:background="@drawable/ic_mode_edit_black_24dp"
@@ -171,9 +170,9 @@
         android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/UserProfilePetID"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="22dp"
         android:layout_toEndOf="@+id/UserProfileDogNameLabel"
         android:layout_toRightOf="@+id/UserProfileDogNameLabel"
         android:backgroundTint="@color/white"
@@ -189,7 +188,6 @@
         app:layout_constraintVertical_bias="0.574" />
 
 
-
     <TextView
         android:id="@+id/UserProfilePetID"
         android:layout_width="158dp"
@@ -197,11 +195,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:layout_marginBottom="138dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginBottom="161dp"
         android:layout_toEndOf="@+id/UserProfileDogIDLabel"
         android:layout_toRightOf="@+id/UserProfileDogIDLabel"
         android:textColor="@color/white"
@@ -219,8 +217,8 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="184dp"
         android:layout_marginEnd="-20dp"
-        card_view:cardBackgroundColor="@color/bg_register"
-        card_view:cardCornerRadius="4dp">
+        card_view:cardBackgroundColor="@color/colorAccent"
+        card_view:cardCornerRadius="@android:dimen/app_icon_size">
 
         <TextView
             android:id="@+id/UserProfileEmail"
@@ -273,5 +271,4 @@
 
     </android.support.v7.widget.CardView>
 
-
-</RelativeLayout>
+    </RelativeLayout>

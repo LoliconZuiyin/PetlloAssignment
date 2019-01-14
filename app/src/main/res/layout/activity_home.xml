@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="@drawable/bgpink"
     tools:context=".HomeActivity">
 
     <android.support.design.widget.BottomNavigationView
@@ -12,11 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/colorPrimary"
+        app:itemBackground="@color/colorAccent"
         app:itemIconTint="@drawable/bnv_tab_item_active"
         app:itemTextColor="@drawable/bnv_tab_item_active"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/navigation_menu" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/dog"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="8dp" />
 
     <TextView
         android:id="@+id/textViewWelcome"
@@ -26,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
         android:text="@string/welcome"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -37,7 +48,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="123dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
 
