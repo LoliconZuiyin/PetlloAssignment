@@ -50,4 +50,63 @@
     <string name="ptwallpaper">ptWallpaper</string>
     <string name="gtwallpaper">gtWallpaper</string>
     <string name="dwwallpaper">dwWallpaper</string>
+    <!---Adopt-->
+    <string name="reply">Reply</string>
+    <string name="Dog1"><b>Dog:</b> Rhodesian Ridgeback Mix</string>
+    <string name="Profile"><b>Profile:</b> Female, 5 Years 2 Months</string>
+    <string name="Condition"><b>Condition:</b> Minor Injury</string>
+    <string name="Body"><b>Body:</b> Medium Size, Medium Fur</string>
+    <string name="Color"><b>Color:</b> Black, Brown, Cream</string>
+    <string name="Location"><b>Location:</b> Shah Alam, Selangor</string>
+    <string name="Posted"><b>Posted:</b> 27 Oct 2018</string>
+    <string name="AdoptionFee"><b>Adoption Fee:</b> RM 150</string>
+
+
+    <string name="send">Contact Owner</string>
+    <string name="map">Display Location</string>
+
+    <string name="OwnerName"><b>Owner Name:</b> Mr.Tong Wen Keong</string>
+    <string name="OwnerHp"><b>Hp Number:</b> 017-7973311</string>
+
+    <string name="enter_a_message_here">Enter a message here</string>
+    <string name="message">Message</string>
+    <string name="enter_your_reply">Enter your reply</string>
+    <string name="close">Close</string>
+    <string name="error_message">Please enter a message</string>
+    <string name="error_reply">Please enter a reply</string>
+
+
+    <string name="Dog2"><b>Dog:</b> Mixed Breed</string>
+    <string name="Profile2"><b>Profile:</b> Male, 2 Months</string>
+    <string name="Condition2"><b>Condition:</b> Healthy</string>
+    <string name="Body2"><b>Body:</b> Medium Size, Short Fur</string>
+    <string name="Color2"><b>Color:</b> Brown, Cream, White</string>
+    <string name="Location2"><b>Location:</b> Damansara Damai, Selangor</string>
+    <string name="Posted2"><b>Posted:</b> 13 Jan 2019</string>
+    <string name="AdoptionFee2"><b>Adoption Fee:</b> FREE</string>
+
+
+    <string name="send2">Contact Owner</string>
+    <string name="map2">Display Location</string>
+
+    <string name="OwnerName2"><b>Owner Name:</b> Mr.Chan Jun Meng</string>
+    <string name="OwnerHp2"><b>Hp Number:</b> 017-8883321</string>
+
+
+    <string name="Dog3"><b>Dog:</b> Mixed Breed</string>
+    <string name="Profile3"><b>Profile:</b> Female, 2 Months</string>
+    <string name="Condition3"><b>Condition:</b> Healthy</string>
+    <string name="Body3"><b>Body:</b> Medium Size, Short Fur</string>
+    <string name="Color3"><b>Color:</b> Black, Brown</string>
+    <string name="Location3"><b>Location:</b> Ampang, Selangor</string>
+    <string name="Posted3"><b>Posted:</b> 10 Jan 2019</string>
+    <string name="AdoptionFee3"><b>Adoption Fee:</b> FREE</string>
+
+
+    <string name="send3">Contact Owner</string>
+    <string name="map3">Display Location</string>
+
+    <string name="OwnerName3"><b>Owner Name:</b> Mr.Low Kai Yi</string>
+    <string name="OwnerHp3"><b>Hp Number:</b> 017-7773763</string>
+
 </resources>

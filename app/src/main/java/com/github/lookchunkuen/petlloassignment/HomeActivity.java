@@ -45,11 +45,13 @@ public class HomeActivity extends AppCompatActivity {
                         Toast.makeText(HomeActivity.this, "Action Home Clicked", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_adoption:
-                        Toast.makeText(HomeActivity.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(HomeActivity.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
                         break;
                     case R.id.action_training:
                         //Toast.makeText(HomeActivity.this, "Action Training Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), DogTraining.class);
+                        intent = new Intent(getApplicationContext(), DogTraining.class);
                         startActivity(intent);
                         break;
                     case R.id.action_profile:
