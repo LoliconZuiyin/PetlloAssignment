@@ -13,6 +13,8 @@ public class DogTraining extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dog_training);
+        getSupportActionBar().setTitle("Dog Training");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //not extends fragment gua, thats y need this supp
         fragmentManager = getSupportFragmentManager();
@@ -29,8 +31,12 @@ public class DogTraining extends AppCompatActivity {
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
             //create fragment from where u wan lo
-            DisplayServices displayServices = new DisplayServices();
+            /*DisplayServices displayServices = new DisplayServices();
             fragmentTransaction.add(R.id.TrainingContainer,displayServices,null);
+            fragmentTransaction.commit();*/
+
+            TrainServiceFragment trainServiceFragment = new TrainServiceFragment();
+            fragmentTransaction.add(R.id.TrainingContainer,trainServiceFragment,null);
             fragmentTransaction.commit();
         }
     }

@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity implements  AdapterView.OnIt
 
         dogList = new ArrayList<>();
 
-        dogList.add(new Dog(R.drawable.dog1, "Kahler", "Female, 5 Years 2 Months"));
-        dogList.add(new Dog(R.drawable.dog2, "Jacky", "Male, 2 Months"));
-        dogList.add(new Dog(R.drawable.dog3, "Athenaz", "Female, 2 Months"));
-        dogList.add(new Dog(R.drawable.dog4, "Keke", "Female, 2 Months"));
-        dogList.add(new Dog(R.drawable.dog5, "Coco", "Female, 5 Months"));
+        dogList.add(new Dog(R.drawable.dog11, "Kahler", "Female, 5 Years 2 Months"));
+        dogList.add(new Dog(R.drawable.dog21, "Jacky", "Male, 2 Months"));
+        dogList.add(new Dog(R.drawable.dog31, "Athenaz", "Female, 2 Months"));
+        dogList.add(new Dog(R.drawable.dog41, "Keke", "Female, 2 Months"));
+        dogList.add(new Dog(R.drawable.dog51, "Coco", "Female, 5 Months"));
 
 
         listView = (ListView) findViewById(R.id.listView);

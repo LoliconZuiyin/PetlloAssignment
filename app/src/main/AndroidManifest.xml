@@ -22,18 +22,30 @@
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".UserProfileActivity"
             android:parentActivityName=".HomeActivity"></activity>
-        <activity android:name=".DogTraining"></activity>
 
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".HomeActivity"/>
         <activity
             android:name=".DogDetail1"
             android:label="DogDetail"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName=".MainActivity"
             />
         <activity
             android:name=".SecondActivity"
             android:label="Second"
             android:parentActivityName=".DogDetail1" />
+        <activity android:name=".DogTraining"
+            android:parentActivityName=".HomeActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".gtActivity"
+            android:parentActivityName=".DogTraining"/>
+        <activity android:name=".ptActivity"
+            android:parentActivityName=".DogTraining"/>
+        <activity android:name=".dwActivity"
+            android:parentActivityName=".DogTraining"></activity>
     </application>
 
 </manifest>

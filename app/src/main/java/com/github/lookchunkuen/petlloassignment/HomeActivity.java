@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.action_home:
-                        Toast.makeText(HomeActivity.this, "Action Home Clicked", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(HomeActivity.this, "Action Home Clicked", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_adoption:
                         //Toast.makeText(HomeActivity.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();

@@ -50,6 +50,15 @@
     <string name="ptwallpaper">ptWallpaper</string>
     <string name="gtwallpaper">gtWallpaper</string>
     <string name="dwwallpaper">dwWallpaper</string>
+    <string name="textview">TextView</string>
+    <string name="title">Title</string>
+    <string name="fees">Fees</string>
+    <string name="description">Description</string>
+    <string name="full_description">Full Description</string>
+    <string name="fees_rm_30">Fees: RM 30</string>
+    <string name="fees_rm_1000">Fees: RM 1000</string>
+    <string name="fees_rm_2000">Fees: RM 2000</string>
+
     <!---Adopt-->
     <string name="reply">Reply</string>
     <string name="Dog1"><b>Dog:</b> Rhodesian Ridgeback Mix</string>
