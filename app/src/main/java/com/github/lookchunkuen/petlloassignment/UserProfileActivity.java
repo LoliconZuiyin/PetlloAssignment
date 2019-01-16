@@ -40,11 +40,6 @@ import java.util.Random;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserProfileActivity extends AppCompatActivity {
-    // Create Custom adapter
-    ListView lst;
-    String[] dogName={"Dog1","Dog2","Dog3"};
-    String[] dogID ={"The dog id1 is executed" , "The dog id2 is executed","The dog id3 is executed"};
-    Integer[] imgID ={R.drawable.dog, R.drawable.dog, R.drawable.dog};
 
   //  private Button button;
     private Button AddPetButton;
@@ -57,8 +52,6 @@ public class UserProfileActivity extends AppCompatActivity {
     private static String URL_REGISTER = "https://petllo.000webhostapp.com/PetProfileRegister.php";
     private static String URL_EDIT = "https://petllo.000webhostapp.com/UpdateUserProfile.php";
     private static String URL_UPLOAD = "https://petllo.000webhostapp.com/UploadPicture.php";
-
-    private BottomNavigationView navigationView;
 
     private Button btn_photo_upload;
     private Bitmap bitmap;
@@ -80,17 +73,6 @@ public class UserProfileActivity extends AppCompatActivity {
         myBlurImage = findViewById(R.id.BlurbgImage);
         myBlurImage.setBlur(2);
 
-        // For pet list
-        //lst = findViewById(R.id.PetList);
-
-        // To open next activity
-     //   button = (Button)findViewById(R.id.UserProfileToDogProfile);
-     //   button.setOnClickListener(new View.OnClickListener(){
-        //    @Override
-          //  public void onClick(View v){
-              //  openDogProfileActivity();
-        //    }
-       // });
 
         // For add dog button
         PetID = findViewById(R.id.UserProfilePetID);
@@ -106,34 +88,6 @@ public class UserProfileActivity extends AppCompatActivity {
         String email = user.get((sessionManager.EMAIL));
         UserProfileUsername.setText(username);
         UserProfileEmail.setText(email);
-
-        navigationView = findViewById(R.id.navigationView);
-        //handle the bottom
-        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.action_home:
-                        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.action_adoption:
-                        Toast.makeText(UserProfileActivity.this, "Action Adoption Clicked", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.action_training:
-                        //Toast.makeText(HomeActivity.this, "Action Training Clicked", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(getApplicationContext(), DogTraining.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.action_profile:
-                        //Toast.makeText(HomeActivity.this, "Action Profile Clicked", Toast.LENGTH_SHORT).show();
-                        intent = new Intent(getApplicationContext(), UserProfileActivity.class);
-                        startActivity(intent);
-                        break;
-                }
-                return true;
-            }
-        });
 
        // For upload button
         btn_photo_upload = findViewById(R.id.UserProfileUploadButton);
@@ -418,48 +372,8 @@ public class UserProfileActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    /*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_user_profile, menu);
-        return true;
+    public void Logout(View v){
+        sessionManager.Logout();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    class PetListAdapter extends ArrayAdapter<String> {
-
-        Context context;
-        public PetListAdapter(Context context, String[] dogName) {
-            super(context,R.layout.petlist, R.id.DogID,dogName);
-            this.context =context;
-        }
-
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View row = inflater.inflate(R.layout.petlist,parent,false);
-
-            ImageView myImage = row.findViewById(R.id.PetImage);
-            TextView myDogID = row.findViewById(R.id.DogID);
-            TextView myDogName = row.findViewById(R.id.DogName);
-
-            return super.getView(position, convertView, parent);
-        }
-    }*/
 }

@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".UserProfileActivity">
 
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/rounded_btn"
+        android:onClick="Logout"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
     <com.jgabrielfreitas.core.BlurImageView
         android:id="@+id/BlurbgImage"
         android:layout_width="match_parent"
@@ -16,18 +30,6 @@
         android:layout_marginEnd="0dp"
         android:scaleType="fitXY"
         android:src="@drawable/dog7" />
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:elevation="0dp"
-        app:itemBackground="@color/colorAccent"
-        app:itemIconTint="@drawable/bnv_tab_item_active"
-        app:itemTextColor="@drawable/bnv_tab_item_active"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/navigation_menu" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ProfileImage"
@@ -107,12 +109,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="194dp"
-        android:layout_marginLeft="194dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginLeft="182dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
-        android:layout_marginBottom="113dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/ic_pets_black_24dp"
         android:onClick="Register"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -178,7 +180,8 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="My Pet"
+        android:hint="My Pet"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

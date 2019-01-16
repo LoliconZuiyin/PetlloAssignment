@@ -33,6 +33,8 @@ public class HomeActivity extends AppCompatActivity {
         String username = user.get((sessionManager.NAME));
         textViewUsername.setText(username);
 
+        getSupportActionBar().setTitle("Home");
+
 
         //handle the bottom
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -61,7 +63,5 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    public void Logout(View v){
-        sessionManager.Logout();
-    }
+
 }

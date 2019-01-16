@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="@drawable/bgpink"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
@@ -12,19 +12,30 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="313dp"
+        android:layout_height="105dp"
         android:contentDescription="@string/logo"
-        app:srcCompat="@drawable/petllo_logo" />
+        app:srcCompat="@drawable/ic_pets_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="348dp"
+        android:layout_height="91dp"
+        android:text="Petllo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:singleLine="true"
         android:textColor="@color/input_login"
@@ -48,10 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:onClick="Login"
         android:background="@drawable/rounded_btn"
+        android:onClick="Login"
         android:text="@string/login"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/buttonGoToReg"

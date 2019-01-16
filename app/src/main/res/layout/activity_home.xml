@@ -18,16 +18,31 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/navigation_menu" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/ProfileImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="70dp"
-        android:src="@drawable/dog"
-        app:civ_border_color="@color/white"
-        app:civ_border_width="8dp" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="313dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/ic_pets_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="348dp"
+        android:layout_height="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="28dp"
+        android:text="Petllo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewWelcome"
@@ -35,10 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="236dp"
         android:text="@string/welcome"
         android:textColor="@color/white"
-        android:textSize="36sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
@@ -47,21 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="123dp"
+        android:layout_marginTop="334dp"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="82dp"
-        android:background="@drawable/rounded_btn"
-        android:onClick="Logout"
-        android:text="@string/logout"
-        android:textColor="@color/white"/>
 
 </RelativeLayout>
