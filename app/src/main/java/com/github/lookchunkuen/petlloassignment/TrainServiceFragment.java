@@ -53,39 +53,14 @@ public class TrainServiceFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                if (position == 0) {
-                    Intent intent = new Intent(view.getContext(), ptActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("CourseName", TrainServiceList.get(position).getCourseName());
-                    bundle.putString("CourseFees", TrainServiceList.get(position).getCourseFees());
-                    bundle.putString("CourseDescription", TrainServiceList.get(position).getCourseDescription());
-                    bundle.putString("FullDescription", TrainServiceList.get(position).getFullDescription());
-                    intent.putExtras(bundle);
-                    startActivity(intent);
-
-                }
-                if (position == 1) {
-                    Intent intent = new Intent(view.getContext(), gtActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("CourseName", TrainServiceList.get(position).getCourseName());
-                    bundle.putString("CourseFees", TrainServiceList.get(position).getCourseFees());
-                    bundle.putString("CourseDescription", TrainServiceList.get(position).getCourseDescription());
-                    bundle.putString("FullDescription", TrainServiceList.get(position).getFullDescription());
-                    intent.putExtras(bundle);
-                    startActivity(intent);
-
-                }
-                if (position == 2) {
-                    Intent intent = new Intent(view.getContext(), dwActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("CourseName", TrainServiceList.get(position).getCourseName());
-                    bundle.putString("CourseFees", TrainServiceList.get(position).getCourseFees());
-                    bundle.putString("CourseDescription", TrainServiceList.get(position).getCourseDescription());
-                    bundle.putString("FullDescription", TrainServiceList.get(position).getFullDescription());
-                    intent.putExtras(bundle);
-                    startActivity(intent);
-
-                }
+                Intent intent = new Intent(view.getContext(), ptActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("CourseName", TrainServiceList.get(position).getCourseName());
+                bundle.putString("CourseFees", TrainServiceList.get(position).getCourseFees());
+                bundle.putString("CourseDescription", TrainServiceList.get(position).getCourseDescription());
+                bundle.putString("FullDescription", TrainServiceList.get(position).getFullDescription());
+                intent.putExtras(bundle);
+                startActivity(intent);
 
             }
         });
